@@ -4,19 +4,56 @@ body {
   color: white;
   text-shadow: black 0 0 1px;
 }
+#top {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 40px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: white;
+  /* Set a background color */
+  color: black;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 10px;
+  /* Rounded corners */
+  font-size: 30px;
+  /* Increase font size */
+
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  -webkit-text-stroke: 3px black;
+  opacity: 80%;
+}
 a {
   color: white;
 }
 table {
   border-collapse: collapse;
   font-size: 80%;
+  font-size: 20;
+  width: 100%;
 }
 th {
   text-align: left;
   background-color: #555;
   cursor: default;
 }
-td, th {
+td,
+th {
   border-top: 1px solid #555;
   border-bottom: 1px solid #555;
   padding: 5px;
