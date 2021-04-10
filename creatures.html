@@ -1,0 +1,509 @@
+<!DOCTYPE html!>
+<html>
+
+<head>
+  <title>생명체 목록</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="search.js"></script>
+  <script src="scrollTop.js"></script>
+</head>
+
+<body>
+  <h1>생명체 목록</h1>
+  <button onclick="document.body.scrollTop = 0" id="top">↑</button>
+  <input id="search" style="width: 100%;font-size: 30;" placeholder="생명체 이름/초성 입력" />
+  <table class="sortable creatures">
+    <thead>
+      <tr>
+        <th>이름</th>
+        <th>사진</th>
+        <th>타입</th>
+        <th>체력</th>
+        <th>모드</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>아이언클래드</td>
+        <td class="image"><img src="slay-the-spire/creatures/Ironclad.png"></td>
+        <td>플레이어</td>
+        <td>80</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>사일런트</td>
+        <td class="image"><img src="slay-the-spire/creatures/TheSilent.png"></td>
+        <td>플레이어</td>
+        <td>70</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>디펙트</td>
+        <td class="image"><img src="slay-the-spire/creatures/Defect.png"></td>
+        <td>플레이어</td>
+        <td>75</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>와쳐</td>
+        <td class="image"><img src="slay-the-spire/creatures/Watcher.png"></td>
+        <td>플레이어</td>
+        <td>72</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>현혹기</td>
+        <td class="image"><img src="slay-the-spire/creatures/Repulsor.png"></td>
+        <td>일반</td>
+        <td>33</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>폭탄기</td>
+        <td class="image"><img src="slay-the-spire/creatures/Exploder.png"></td>
+        <td>일반</td>
+        <td>30</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>턱벌레</td>
+        <td class="image"><img src="slay-the-spire/creatures/JawWorm.png"></td>
+        <td>일반</td>
+        <td>43</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>촉새</td>
+        <td class="image"><img src="slay-the-spire/creatures/BanditChild.png"></td>
+        <td>일반</td>
+        <td>30</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>첨탑 암종</td>
+        <td class="image"><img src="slay-the-spire/creatures/Serpent.png"></td>
+        <td>일반</td>
+        <td>170</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>어두미</td>
+        <td class="image"><img src="slay-the-spire/creatures/Darkling.png"></td>
+        <td>일반</td>
+        <td>48</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>아귀</td>
+        <td class="image"><img src="slay-the-spire/creatures/Maw.png"></td>
+        <td>일반</td>
+        <td>300</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>신비주의자</td>
+        <td class="image"><img src="slay-the-spire/creatures/Healer.png"></td>
+        <td>일반</td>
+        <td>50</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>스네코</td>
+        <td class="image"><img src="slay-the-spire/creatures/Snecko.png"></td>
+        <td>일반</td>
+        <td>119</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>선택받은 자</td>
+        <td class="image"><img src="slay-the-spire/creatures/Chosen.png"></td>
+        <td>일반</td>
+        <td>95</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>섀 (기절됨)</td>
+        <td class="image"><img src="slay-the-spire/creatures/ByrdGrounded.png"></td>
+        <td>일반</td>
+        <td>28</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>섀</td>
+        <td class="image"><img src="slay-the-spire/creatures/Byrd.png"></td>
+        <td>일반</td>
+        <td>27</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>산성 슬라임 (소)</td>
+        <td class="image"><img src="slay-the-spire/creatures/AcidSlime_S.png"></td>
+        <td>일반</td>
+        <td>9</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>산성 슬라임 (중)</td>
+        <td class="image"><img src="slay-the-spire/creatures/AcidSlime_M.png"></td>
+        <td>일반</td>
+        <td>30</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>산성 슬라임 (대)</td>
+        <td class="image"><img src="slay-the-spire/creatures/AcidSlime_L.png"></td>
+        <td>일반</td>
+        <td>65</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>뱀 식물</td>
+        <td class="image"><img src="slay-the-spire/creatures/SnakePlant.png"></td>
+        <td>일반</td>
+        <td>75</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>백부장</td>
+        <td class="image"><img src="slay-the-spire/creatures/Centurion.png"></td>
+        <td>일반</td>
+        <td>77</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>방패 그렘린</td>
+        <td class="image"><img src="slay-the-spire/creatures/GremlinTsundere.png"></td>
+        <td>일반</td>
+        <td>12</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>반사기</td>
+        <td class="image"><img src="slay-the-spire/creatures/Spiker.png"></td>
+        <td>일반</td>
+        <td>48</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>로미오</td>
+        <td class="image"><img src="slay-the-spire/creatures/BanditLeader.png"></td>
+        <td>일반</td>
+        <td>39</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>뚱뚱한 그렘린</td>
+        <td class="image"><img src="slay-the-spire/creatures/GremlinFat.png"></td>
+        <td>일반</td>
+        <td>16</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>동물하초</td>
+        <td class="image"><img src="slay-the-spire/creatures/FungiBeast.png"></td>
+        <td>일반</td>
+        <td>26</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>도적</td>
+        <td class="image"><img src="slay-the-spire/creatures/Looter.png"></td>
+        <td>일반</td>
+        <td>46</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>단검</td>
+        <td class="image"><img src="slay-the-spire/creatures/Dagger.png"></td>
+        <td>일반</td>
+        <td>25</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>노예 상인</td>
+        <td class="image"><img src="slay-the-spire/creatures/SlaverRed.png"></td>
+        <td>일반</td>
+        <td>50</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>노예 상인</td>
+        <td class="image"><img src="slay-the-spire/creatures/SlaverBlue.png"></td>
+        <td>일반</td>
+        <td>47</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>꿈틀대는 덩어리</td>
+        <td class="image"><img src="slay-the-spire/creatures/WrithingMass.png"></td>
+        <td>일반</td>
+        <td>160</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>그렘린 마법사</td>
+        <td class="image"><img src="slay-the-spire/creatures/GremlinWizard.png"></td>
+        <td>일반</td>
+        <td>21</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>구체형 수호기</td>
+        <td class="image"><img src="slay-the-spire/creatures/SphericGuardian.png"></td>
+        <td>일반</td>
+        <td>20</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>구체 순찰기</td>
+        <td class="image"><img src="slay-the-spire/creatures/OrbWalker.png"></td>
+        <td>일반</td>
+        <td>93</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>교활한 그렘린</td>
+        <td class="image"><img src="slay-the-spire/creatures/GremlinThief.png"></td>
+        <td>일반</td>
+        <td>12</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>광신자</td>
+        <td class="image"><img src="slay-the-spire/creatures/Cultist.png"></td>
+        <td>일반</td>
+        <td>51</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>과도자</td>
+        <td class="image"><img src="slay-the-spire/creatures/Transient.png"></td>
+        <td>일반</td>
+        <td>999</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>공벌레</td>
+        <td class="image"><img src="slay-the-spire/creatures/FuzzyLouseNormal.png"></td>
+        <td>일반</td>
+        <td>11</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>공벌레</td>
+        <td class="image"><img src="slay-the-spire/creatures/FuzzyLouseDefensive.png"></td>
+        <td>일반</td>
+        <td>13</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>곰</td>
+        <td class="image"><img src="slay-the-spire/creatures/BanditBear.png"></td>
+        <td>일반</td>
+        <td>40</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>강도</td>
+        <td class="image"><img src="slay-the-spire/creatures/Mugger.png"></td>
+        <td>일반</td>
+        <td>48</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>갑각기생충</td>
+        <td class="image"><img src="slay-the-spire/creatures/ShelledParasite.png"></td>
+        <td>일반</td>
+        <td>70</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+      <tr>
+        <td>가시 슬라임 (소)</td>
+        <td class="image"><img src="slay-the-spire/creatures/SpikeSlime_S.png"></td>
+        <td>일반</td>
+        <td>13</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <td>가시 슬라임 (중)</td>
+      <td class="image"><img src="slay-the-spire/creatures/SpikeSlime_M.png"></td>
+      <td>일반</td>
+      <td>30</td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>Apology Slime</td>
+        <td class="image"><img src="slay-the-spire/creatures/ApologySlime.png"></td>
+        <td>일반</td>
+        <td>11</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>파충류 주술사</td>
+        <td class="image"><img src="slay-the-spire/creatures/Reptomancer.png"></td>
+        <td>엘리트</td>
+        <td>188</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>칼부림의 책</td>
+        <td class="image"><img src="slay-the-spire/creatures/BookOfStabbing.png"></td>
+        <td>엘리트</td>
+        <td>162</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>첨탑의 창</td>
+        <td class="image"><img src="slay-the-spire/creatures/SpireSpear.png"></td>
+        <td>엘리트</td>
+        <td>160</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>첨탑의 방패</td>
+        <td class="image"><img src="slay-the-spire/creatures/SpireShield.png"></td>
+        <td>엘리트</td>
+        <td>110</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>보초기</td>
+        <td class="image"><img src="slay-the-spire/creatures/Sentry.png"></td>
+        <td>엘리트</td>
+        <td>39</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>라가불린 (깨어남)</td>
+        <td class="image"><img src="slay-the-spire/creatures/LagavulinAwake.png"></td>
+        <td>엘리트</td>
+        <td>110</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>라가불린</td>
+        <td class="image"><img src="slay-the-spire/creatures/Lagavulin.png"></td>
+        <td>엘리트</td>
+        <td>109</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>노예 관리자</td>
+        <td class="image"><img src="slay-the-spire/creatures/SlaverBoss.png"></td>
+        <td>엘리트</td>
+        <td>55</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>네메시스</td>
+        <td class="image"><img src="slay-the-spire/creatures/Nemesis.png"></td>
+        <td>엘리트</td>
+        <td>185</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>그렘린 리더</td>
+        <td class="image"><img src="slay-the-spire/creatures/GremlinLeader.png"></td>
+        <td>엘리트</td>
+        <td>147</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>귀족 그렘린</td>
+        <td class="image"><img src="slay-the-spire/creatures/GremlinNob.png"></td>
+        <td>엘리트</td>
+        <td>83</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>거인의 머리</td>
+        <td class="image"><img src="slay-the-spire/creatures/GiantHead.png"></td>
+        <td>엘리트</td>
+        <td>500</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>투사</td>
+        <td class="image"><img src="slay-the-spire/creatures/Champ.png"></td>
+        <td>보스</td>
+        <td>420</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>타락한 심장</td>
+        <td class="image"><img src="slay-the-spire/creatures/CorruptHeart.png"></td>
+        <td>보스</td>
+        <td>750</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>청동 자동인형</td>
+        <td class="image"><img src="slay-the-spire/creatures/BronzeAutomaton.png"></td>
+        <td>보스</td>
+        <td>300</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>육각령</td>
+        <td class="image"><img src="slay-the-spire/creatures/Hexaghost.png"></td>
+        <td>보스</td>
+        <td>250</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>시간 포식자</td>
+        <td class="image"><img src="slay-the-spire/creatures/TimeEater.png"></td>
+        <td>보스</td>
+        <td>456</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>수호자</td>
+        <td class="image"><img src="slay-the-spire/creatures/TheGuardian.png"></td>
+        <td>보스</td>
+        <td>240</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>수집가</td>
+        <td class="image"><img src="slay-the-spire/creatures/TheCollector.png"></td>
+        <td>보스</td>
+        <td>282</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>도누</td>
+        <td class="image"><img src="slay-the-spire/creatures/Donu.png"></td>
+        <td>보스</td>
+        <td>250</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>데카</td>
+        <td class="image"><img src="slay-the-spire/creatures/Deca.png"></td>
+        <td>보스</td>
+        <td>250</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>대왕 슬라임</td>
+        <td class="image"><img src="slay-the-spire/creatures/SlimeBoss.png"></td>
+        <td>보스</td>
+        <td>140</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+      <tr>
+        <td>깨어난 자</td>
+        <td class="image"><img src="slay-the-spire/creatures/AwakenedOne.png"></td>
+        <td>보스</td>
+        <td>300</td>
+        <td><a href="slay-the-spire/index.html"></a></td>
+      </tr>
+    </tbody>
+    <tfoot></tfoot>
+  </table>
+</body>
+
+</html>
