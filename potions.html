@@ -1,0 +1,373 @@
+<!DOCTYPE html!>
+<html>
+
+<head>
+  <title>포션 목록</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="search.js"></script>
+  <script src="scrollTop.js"></script>
+</head>
+
+<body>
+  <h1>포션 목록</h1>
+  <button onclick="document.body.scrollTop = 0" id="top">↑</button>
+  <input id="search" style="width: 100%;font-size: 30;" placeholder="포션 이름/초성 입력" />
+  <table class="sortable">
+    <tr>
+      <th>이름</th>
+      <th>사진</th>
+      <th>희귀도</th>
+      <th>설명</th>
+      <th>모드</th>
+    </tr>
+
+    <tr>
+      <td>공격 포션</td>
+      <td><img src="slay-the-spire/potions/공격포션.png"></td>
+      <td>일반</td>
+      <td>무작위 <span class="color-y">공격</span> 카드 <span class="color-b">셋</span> 중 <span class="color-b">하나를</span> 선택해
+        얻습니다. 이번 턴 동안 그 카드의 비용이 <span class="color-b">0</span> 이 됩니다.</td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>공포 포션</td>
+      <td><img src="slay-the-spire/potions/공포포션.png"></td>
+      <td>일반</td>
+      <td><span class="color-y">취약을</span> <span class="color-b">3</span> 부여합니다.</td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>몸풀기용 포션</td>
+      <td><img src="slay-the-spire/potions/몸풀기용포션.png"></td>
+      <td>일반</td>
+      <td><span class="color-y">힘을</span> <span class="color-b">5</span> 얻습니다. 턴 종료 시 <span class="color-y">힘을</span>
+        <span class="color-b">5</span> 잃습니다.
+      </td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>무색 포션</td>
+      <td><img src="slay-the-spire/potions/무색포션.png"></td>
+      <td>일반</td>
+      <td><span class="color-y">무색</span> 카드 <span class="color-b">셋</span> 중 <span class="color-b">하나를</span> 선택해 얻습니다.
+        이번 턴 동안 그 카드의 비용이 <span class="color-b">0</span> 이 됩니다.</td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>민첩 포션</td>
+      <td><img src="slay-the-spire/potions/민첩포션.png"></td>
+      <td>일반</td>
+      <td><span class="color-y">민첩을</span> <span class="color-b">2</span> 얻습니다.</td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>밀집 포션</td>
+      <td><img src="slay-the-spire/potions/밀집포션.png"></td>
+      <td>일반</td>
+      <td><span class="color-y">밀집을</span> <span class="color-b">2</span> 얻습니다.</td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>방어도 포션</td>
+      <td><img src="slay-the-spire/potions/방어도포션.png"></td>
+      <td>일반</td>
+      <td><span class="color-y">방어도를</span> <span class="color-b">12</span> 얻습니다.</td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>병 속의 기적</td>
+      <td><img src="slay-the-spire/potions/병속의기적.png"></td>
+      <td>일반</td>
+      <td><span class="color-y">기적을</span> <span class="color-b">2</span> 장 얻습니다.</td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>속도 포션</td>
+      <td><img src="slay-the-spire/potions/속도포션.png"></td>
+      <td>일반</td>
+      <td><span class="color-y">민첩을</span> <span class="color-b">5</span> 얻습니다. 턴 종료 시 <span class="color-y">민첩을</span>
+        <span class="color-b">5</span> 잃습니다.
+      </td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>스킬 포션</td>
+      <td><img src="slay-the-spire/potions/스킬포션.png"></td>
+      <td>일반</td>
+      <td>무작위 <span class="color-y">스킬</span> 카드 <span class="color-b">셋</span> 중 <span class="color-b">하나를</span> 선택해
+        얻습니다. 이번 턴 동안 그 카드의 비용이 <span class="color-b">0</span> 이 됩니다.</td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>신속 포션</td>
+      <td><img src="slay-the-spire/potions/신속포션.png"></td>
+      <td>일반</td>
+      <td>카드를 <span class="color-b">3</span> 장 뽑습니다.</td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>약화 포션</td>
+      <td><img src="slay-the-spire/potions/약화포션.png"></td>
+      <td>일반</td>
+      <td><span class="color-y">약화를</span> <span class="color-b">3</span> 부여합니다.</td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>에너지 포션</td>
+      <td><img src="slay-the-spire/potions/에너지포션.png"></td>
+      <td>일반</td>
+      <td>에너지를 <span class="color-b">2</span> 얻습니다.</td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>재련의 축복</td>
+      <td><img src="slay-the-spire/potions/재련의축복.png"></td>
+      <td>일반</td>
+      <td>손에 있는 모든 카드를 이번 전투 동안 강화합니다.</td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>중독 포션</td>
+      <td><img src="slay-the-spire/potions/중독포션.png"></td>
+      <td>일반</td>
+      <td><span class="color-y">중독을</span> <span class="color-b">6</span> 부여합니다.</td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>파워 포션</td>
+      <td><img src="slay-the-spire/potions/파워포션.png"></td>
+      <td>일반</td>
+      <td>무작위 <span class="color-y">파워</span> 카드 <span class="color-b">셋</span> 중 <span class="color-b">하나를</span> 선택해
+        얻습니다. 이번 턴 동안 그 카드의 비용이 <span class="color-b">0</span> 이 됩니다.</td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>폭발 포션</td>
+      <td><img src="slay-the-spire/potions/폭발포션.png"></td>
+      <td>일반</td>
+      <td>적 전체에게 피해를 <span class="color-b">10</span> 줍니다.</td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>피 포션</td>
+      <td><img src="slay-the-spire/potions/피포션.png"></td>
+      <td>일반</td>
+      <td>최대 체력의 <span class="color-b">20%</span> 를 회복합니다.</td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>화염 포션</td>
+      <td><img src="slay-the-spire/potions/화염포션.png"></td>
+      <td>일반</td>
+      <td>피해를 <span class="color-b">20</span> 줍니다.</td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>힘 포션</td>
+      <td><img src="slay-the-spire/potions/힘포션.png"></td>
+      <td>일반</td>
+      <td><span class="color-y">힘을</span> <span class="color-b">2</span> 얻습니다.</td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>강철의 정수</td>
+      <td><img src="slay-the-spire/potions/강철의정수.png"></td>
+      <td>고급</td>
+      <td><span class="color-y">판금</span> <span class="color-y">갑옷을</span> <span class="color-b">4</span> 얻습니다.</td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>경지 포션</td>
+      <td><img src="slay-the-spire/potions/경지포션.png"></td>
+      <td>고급</td>
+      <td>선택: <span class="color-y">명상</span> 하거나 <span class="color-y">진노</span> 합니다.</td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>고대 포션</td>
+      <td><img src="slay-the-spire/potions/고대포션.png"></td>
+      <td>고급</td>
+      <td><span class="color-y">인공물을</span> <span class="color-b">1</span> 얻습니다.</td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>교활함 포션</td>
+      <td><img src="slay-the-spire/potions/교활함포션.png"></td>
+      <td>고급</td>
+      <td><span class="color-y">단도+</span> 를 <span class="color-b">3</span> 장 얻습니다.</td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>도박꾼의 영액</td>
+      <td><img src="slay-the-spire/potions/도박꾼의영액.png"></td>
+      <td>고급</td>
+      <td>원하는 만큼 카드를 버리고 버린 만큼 카드를 뽑습니다.</td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>복제 포션</td>
+      <td><img src="slay-the-spire/potions/복제포션.png"></td>
+      <td>고급</td>
+      <td>이번 턴에, 다음으로 내는 카드가 두 번 사용됩니다.</td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>수용의 포션</td>
+      <td><img src="slay-the-spire/potions/수용의포션.png"></td>
+      <td>고급</td>
+      <td>구체 슬롯을 <span class="color-b">2</span> 개 얻습니다.</td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>액상 기억</td>
+      <td><img src="slay-the-spire/potions/액상기억.png"></td>
+      <td>고급</td>
+      <td>버린 카드 더미에서 카드를 선택해 손으로 들고 옵니다. 이번 턴에 비용이 <span class="color-b">0</span> 이 됩니다.</td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>엘릭서</td>
+      <td><img src="slay-the-spire/potions/엘릭서.png"></td>
+      <td>고급</td>
+      <td>손에 있는 카드를 원하는 만큼 <span class="color-y">소멸시킵니다.</span></td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>재생 포션</td>
+      <td><img src="slay-the-spire/potions/재생포션.png"></td>
+      <td>고급</td>
+      <td><span class="color-y">재생을</span> <span class="color-b">5</span> 얻습니다.</td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>정제된 혼돈</td>
+      <td><img src="slay-the-spire/potions/정제된혼돈.png"></td>
+      <td>고급</td>
+      <td>뽑을 카드 더미 위에서부터 <span class="color-b">3</span> 장의 카드를 사용합니다.</td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>청동 액체</td>
+      <td><img src="slay-the-spire/potions/청동액체.png"></td>
+      <td>고급</td>
+      <td><span class="color-y">가시를</span> <span class="color-b">3</span> 얻습니다.</td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>과일 주스</td>
+      <td><img src="slay-the-spire/potions/과일주스.png"></td>
+      <td>희귀</td>
+      <td>최대 체력을 <span class="color-b">5</span> 얻습니다.</td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>광신자 포션</td>
+      <td><img src="slay-the-spire/potions/광신자포션.png"></td>
+      <td>희귀</td>
+      <td><span class="color-y">의식을</span> <span class="color-b">1</span> 얻습니다.</td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>단지 속의 유령</td>
+      <td><img src="slay-the-spire/potions/단지속의유령.png"></td>
+      <td>희귀</td>
+      <td><span class="color-y">불가침을</span> <span class="color-b">1</span> 얻습니다.</td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>무쇠의 심장</td>
+      <td><img src="slay-the-spire/potions/무쇠의심장.png"></td>
+      <td>희귀</td>
+      <td><span class="color-y">금속화를</span> <span class="color-b">6</span> 얻습니다.</td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>병 속의 요정</td>
+      <td><img src="slay-the-spire/potions/병속의요정.png"></td>
+      <td>희귀</td>
+      <td>사망 시 이 포션을 버리는 대신 최대 체력의 <span class="color-b">30%</span> 까지 체력을 회복합니다.</td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>스네코 기름</td>
+      <td><img src="slay-the-spire/potions/스네코기름.png"></td>
+      <td>희귀</td>
+      <td>카드를 <span class="color-b">5</span> 장 뽑습니다. 손에 있는 카드의 비용을 무작위로 변경합니다.</td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>암브로시아</td>
+      <td><img src="slay-the-spire/potions/암브로시아.png"></td>
+      <td>희귀</td>
+      <td><span class="color-y">강림합니다.</span></td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>암흑의 정수</td>
+      <td><img src="slay-the-spire/potions/암흑의정수.png"></td>
+      <td>희귀</td>
+      <td>모든 구체 슬롯에 <span class="color-y">암흑을</span> <span class="color-b">1</span> 번 영창합니다.</td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>엔트로피의 영액</td>
+      <td><img src="slay-the-spire/potions/엔트로피의영액.png"></td>
+      <td>희귀</td>
+      <td>빈 포션 슬롯을 무작위 포션으로 채웁니다.</td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+    <tr>
+      <td>연막탄</td>
+      <td><img src="slay-the-spire/potions/연막탄.png"></td>
+      <td>희귀</td>
+      <td>보스가 아닌 적으로부터 도망칩니다. 보상은 얻을 수 없습니다.</td>
+      <td><a href="slay-the-spire/index.html"></a></td>
+    </tr>
+
+  </table>
+</body>
+
+</html>
