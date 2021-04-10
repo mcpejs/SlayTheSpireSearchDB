@@ -1,0 +1,268 @@
+<!DOCTYPE html!>
+<html>
+
+<head>
+  <title>키워드 목록</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="search.js"></script>
+  <script src="scrollTop.js"></script>
+</head>
+
+<body>
+  <h1>키워드 목록</h1>
+  <button onclick="document.body.scrollTop = 0" id="top">↑</button>
+  <input id="search" style="width: 100%;font-size: 30;" placeholder="키워드 이름/초성 입력" />
+  <table class="sortable" style="font-size: 25px;">
+    <tr>
+      <th>이름</th>
+      <th>설명</th>
+    </tr>
+
+    <tr>
+      <td>에너지</td>
+      <td>에너지는 카드를 사용하기 위한 자원입니다.</td>
+    </tr>
+
+    <tr>
+      <td>인공물</td>
+      <td>다음에 걸리는 대부분의 해로운 효과를 무효화합니다.</td>
+    </tr>
+
+    <tr>
+      <td>방어도</td>
+      <td>다음 턴까지 피해량을 감소시킵니다.</td>
+    </tr>
+
+    <tr>
+      <td>저주</td>
+      <td>자신에게 부정적인 효과를 갖고 있는 카드입니다.</td>
+    </tr>
+
+    <tr>
+      <td>민첩</td>
+      <td>카드 사용시 얻는 방어도를 증가시킵니다.</td>
+    </tr>
+
+    <tr>
+      <td>소멸</td>
+      <td>전투가 종료될 때까지 덱에서 제외됩니다.</td>
+    </tr>
+
+    <tr>
+      <td>선천성</td>
+      <td>전투 시작 시 뽑는 카드에 포함됩니다.</td>
+    </tr>
+
+    <tr>
+      <td>잠김</td>
+      <td>아직 해금되지 않은 카드입니다.</td>
+    </tr>
+
+    <tr>
+      <td>중독</td>
+      <td>상대 턴이 시작할 때 중독된 적은 그 만큼 피해를 받습니다. 중독은 매 턴 <span class="color-b">1</span> 씩 감소합니다.</td>
+    </tr>
+
+    <tr>
+      <td>보존</td>
+      <td>턴 종료시 버려지지 않습니다.</td>
+    </tr>
+
+    <tr>
+      <td>약화</td>
+      <td>공격 시 피해량이 <span class="color-b">25%</span> 감소합니다.</td>
+    </tr>
+
+    <tr>
+      <td>가시</td>
+      <td><span class="color-y">공격</span> 피해를 받을 때, 공격한 상대에게 피해를 줍니다.</td>
+    </tr>
+
+    <tr>
+      <td>강림</td>
+      <td>이 <span class="color-y">경지</span> 에 도달하면 에너지 3개를 얻습니다. 공격이 3배의 피해를 줍니다. 다음 턴 시작 시 이 <span
+          class="color-y">경지</span> 에서 벗어납니다.</td>
+    </tr>
+
+    <tr>
+      <td>강화</td>
+      <td>강화를 통해 카드를 더욱 강력하게 만들 수 있습니다. 이는 카드당 한 번만 가능합니다.</td>
+    </tr>
+
+    <tr>
+      <td>개전</td>
+      <td>개전 카드는 매 턴의 첫번째 카드로만 사용할 수 있습니다.</td>
+    </tr>
+
+    <tr>
+      <td>경지</td>
+      <td>동시에 하나의 경지만 가질 수 있습니다.</td>
+    </tr>
+
+    <tr>
+      <td>공허</td>
+      <td>공허는 카드를 뽑을 때 에너지를 잃는 사용 불가인 상태이상 카드입니다.</td>
+    </tr>
+
+    <tr>
+      <td>냉기</td>
+      <td>구체: (지속/발현) <span class="color-y">방어도</span> 를 얻습니다.</td>
+    </tr>
+
+    <tr>
+      <td>단도</td>
+      <td>사용 시 소멸되는 비용이 <span class="color-b">0</span> 인 카드입니다.</td>
+    </tr>
+
+    <tr>
+      <td>만트라</td>
+      <td><span class="color-b">10</span> <span class="color-y">만트라를</span> 얻으면, <span class="color-y">강림합니다.</span>
+      </td>
+    </tr>
+
+    <tr>
+      <td>명상</td>
+      <td>이 <span class="color-y">경지에서</span> 벗어나면 에너지 2개를 얻습니다.</td>
+    </tr>
+
+    <tr>
+      <td>미지</td>
+      <td>아직 본 적 없는 카드입니다.</td>
+    </tr>
+
+    <tr>
+      <td>밀집</td>
+      <td>밀집은 <span class="color-y">영창된</span> 구체의 효율을 증가시킵니다.</td>
+    </tr>
+
+    <tr>
+      <td>발현</td>
+      <td>가장 오른쪽의 구체를 사용해서 발현 효과를 발동시킵니다.</td>
+    </tr>
+
+    <tr>
+      <td>변화</td>
+      <td>무작위로 정해진 카드로 교체됩니다.</td>
+    </tr>
+
+    <tr>
+      <td>부상</td>
+      <td>사용 불가인 상태이상 카드입니다.</td>
+    </tr>
+
+    <tr>
+      <td>불가침</td>
+      <td>받는 공격 피해와 체력 손실을 전부 <span class="color-b">1</span> 로 감소시킵니다.</td>
+    </tr>
+
+    <tr>
+      <td>사용불가</td>
+      <td>사용할 수 없는 카드입니다.</td>
+    </tr>
+
+    <tr>
+      <td>상태이상</td>
+      <td>전투가 끝나면 사라지는 카드입니다.</td>
+    </tr>
+
+    <tr>
+      <td>손상</td>
+      <td>카드로부터 얻는 <span class="color-y">방어도</span> 가 <span class="color-b">25%</span> 감소합니다.</td>
+    </tr>
+
+    <tr>
+      <td>암흑</td>
+      <td>구체: (지속)매 턴 피해량을 증가시킵니다. (발현)체력이 가장 낮은 적에게 누적된 피해를 줍니다.</td>
+    </tr>
+
+    <tr>
+      <td>어지러움</td>
+      <td>어지러움은 사용 불가인 상태이상 카드입니다.</td>
+    </tr>
+
+    <tr>
+      <td>영창</td>
+      <td>구체를 영창하면 가장 오른쪽의 빈 슬롯에 구체를 넣습니다. 빈 슬롯이 없을 경우, 가장 오른쪽의 구체가 <span class="color-y">발현</span> 되어 자리를 비웁니다.</td>
+    </tr>
+
+    <tr>
+      <td>예지</td>
+      <td>뽑을 카드 더미 위에서 X장의 카드를 봅니다. 원하는 만큼 버릴 수 있습니다.</td>
+    </tr>
+
+    <tr>
+      <td>의식</td>
+      <td>턴 종료 시 <span class="color-y">힘을</span> 얻습니다.</td>
+    </tr>
+
+    <tr>
+      <td>재생</td>
+      <td>턴 종료 시 체력을 회복합니다. 재생은 매 턴 <span class="color-b">1</span> 씩 감소합니다.</td>
+    </tr>
+
+    <tr>
+      <td>전기</td>
+      <td>구체: (지속/발현)무작위 적에게 피해를 줍니다.</td>
+    </tr>
+
+    <tr>
+      <td>조준</td>
+      <td>조준된 대상은 구체의 피해를 <span class="color-b">50%</span> 추가로 받습니다.</td>
+    </tr>
+
+    <tr>
+      <td>진노</td>
+      <td>이 <span class="color-y">경지에서는,</span> 주고 받는 공격 피해가 2배가 됩니다.</td>
+    </tr>
+
+    <tr>
+      <td>취약</td>
+      <td>공격을 받을 시 <span class="color-b">50%</span> 의 피해를 추가로 받습니다.</td>
+    </tr>
+
+    <tr>
+      <td>치명타</td>
+      <td>이 카드를 통해 하수인이 아닌 적을 죽일 경우 발동합니다.</td>
+    </tr>
+
+    <tr>
+      <td>타격</td>
+      <td>"타격"이 이름에 포함되어 있는 카드입니다.</td>
+    </tr>
+
+    <tr>
+      <td>플라즈마</td>
+      <td>구체: (지속/발현)에너지를 얻습니다.</td>
+    </tr>
+
+    <tr>
+      <td>혼란</td>
+      <td>카드를 가져올 때 마다 비용이 무작위로 정해집니다.</td>
+    </tr>
+
+    <tr>
+      <td>화상</td>
+      <td>화상은 턴 종료 시 손에 있으면 자신에게 피해를 주는 사용 불가인 상태이상 카드입니다.</td>
+    </tr>
+
+    <tr>
+      <td>활력</td>
+      <td>다음 공격 이 추가 피해를 줍니다.</td>
+    </tr>
+
+    <tr>
+      <td>휘발성</td>
+      <td>턴 종료시 손에 있을 경우 소멸되는 카드입니다. 소멸된 카드는 전투가 종료될 때까지 덱에서 제외됩니다.</td>
+    </tr>
+
+    <tr>
+      <td>힘</td>
+      <td>가하는 공격 피해량을 증가시킵니다.</td>
+    </tr>
+
+  </table>
+</body>
+
+</html>
